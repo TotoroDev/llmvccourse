@@ -1,0 +1,5 @@
+login:
+  authorization:
+    error:
+      invalid-username: User with such username doesn't exist
+      invalid-password: Incorrect password

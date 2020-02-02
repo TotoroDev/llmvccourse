@@ -1,0 +1,9 @@
+user:
+  empty:
+    username: Username cannot be less than 6 characters
+    firstname: first name cannot be empty
+    lastname: last name cannot be empty
+    activity: activity cannot be empty
+  not-valid:
+    age: age is not valid
+    password: Password must have one upper case, one lower case and should have length between 6 and 10 characters

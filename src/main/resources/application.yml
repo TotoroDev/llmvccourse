@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    include:
+    - exceptionMessages
+    - validationMessages
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+  datasource:
+      url: jdbc:mysql://localhost:3306/boot?useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: 1111
+      data: classpath:scripts/data.sql
+      initialization-mode: always
+
+  mvc:
+    static-path-pattern: /resources/**
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
